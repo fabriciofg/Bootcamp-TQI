@@ -1,11 +1,14 @@
 let butonAdicionar = document.getElementById('adicionar')
 let inpultItem = document.getElementById('item')
+let listaItens = document.getElementById('listaItens')
 
 
-let teste = `teste ${inpultItem}`
 
-function adicionar(){    
-    console.log ('habilitado')
-    console.log (teste)
+
+
+function adicionar(){     
+    console.log (inpultItem.value)
+    listaItens.innerHTML += `<li><input type="checkbox" name="checkboxItem" id="${inpultItem.value}">${inpultItem.value} </li>`
+    listaItens.addEventListener
 
 }
