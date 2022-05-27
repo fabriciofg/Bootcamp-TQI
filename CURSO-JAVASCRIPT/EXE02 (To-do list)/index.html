@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="assets/css/style.css"> <!-- link CSS -->
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Este é o meu primeiro projeto Javascript.</p>
-    <div id="counter">
-        <button id="subtrair" name="subtrair" onclick="decrement()">-</button>
-        <span id="currentNumber">0</span>
-        <button id="adicionar" name="adicionar" onclick="increment()">+</button>
+    <h1>To-Do List</h1>
+    <p>Este é o meu segundo projeto Javascript.</p>
+    <div id="inpult">
+        <input type="text" name="item" id="item">
+        <button id="adicionar" name="adicionar" onclick="adicionar()">+</button>
+    </div>
+    <div id="lista">
+        <ul id="listaItens">
+            <li class="liLista">
+                <input type="checkbox" name="checkboxItem" id="checkboxItem">Teste
+            </li>
+        </ul>
+
     </div>
     <script src="assets/js/scripts.js"></script> <!-- link JavaScripts -->
 </body>

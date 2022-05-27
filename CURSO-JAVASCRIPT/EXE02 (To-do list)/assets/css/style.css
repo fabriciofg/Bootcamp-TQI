@@ -16,23 +16,26 @@ button {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 2px solid lightcoral;
-    background-color: rgb(241, 214, 214);
-    color: lightcoral;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(14, 0, 77);
+    color: rgb(255, 255, 255);
     font-size: 16pt;
     font-weight: 600;
     text-align: center;
+    margin-left: 7px;
 }
 
-#counter {
+#inpult {
+    display: flex;
+}
+#lista {
     display: flex;
 }
 
-#currentNumber {
+.liLista{
     display: flex;
     align-items: center;
     margin: 0 20px;
     font-size: 16pt;
 }
-© 2022 GitHub, Inc.
-Terms
+
