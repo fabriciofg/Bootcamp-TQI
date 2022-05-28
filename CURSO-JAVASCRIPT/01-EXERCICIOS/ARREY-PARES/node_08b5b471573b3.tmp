@@ -9,7 +9,7 @@ function substituiPares(arrey){
             console.log(`${arrey[i]} impar`)
         }else{
             console.log(`${arrey[i]} par`)
-            arrey.splice(i,1)
+            arrey.splice(i,1,0,0)
         }
         
     }
@@ -17,11 +17,6 @@ function substituiPares(arrey){
 }
 
 substituiPares([0,1,2,3,4,5,6,7,8,9,9,10])
-
-let colors = ['red','green','blue'];
-
-colors.splice(2, 0, 'purble');
-console.log(colors);        // [ 'red', 'green', 'purble', 'blue' ]
 
 
 
