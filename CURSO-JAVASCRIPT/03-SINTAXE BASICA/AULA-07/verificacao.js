@@ -27,35 +27,6 @@ function verificacao(){
         }
     }    
 }
-verificacao()
 
-function comparaNumeros(num1, num2){
-    const saoIguais = num1 === num2;
-    const soma = num1 + num2
-    const primeiraFrase = criaPrimeiraFrase(num1, num2)
-
-
-    //if normal
-    /*
-    if(!saoIguais){
-        return "São iguais"
-    }else{
-        return "não são iguais"
-    }
-    */
-
-    //if ternário
-    return saoIguais ? "São iguais" : "não são iguais";
-}
-
-function criaPrimeiraFrase(num1, num2){
-    let saoIguais = ''
-    if(num1 !== num2){
-        saoIguais = 'nao'
-    }
-
-    return `Os números ${num1} e ${num2}${saoIguais} são IGUAIS`
-    
-}
-
+console.log(comparaNumeros(1,2))
 
