@@ -1,0 +1,23 @@
+//Solução 1
+function substituiPares(arrey){
+    if(!arrey.length){
+        console.log('Informe um arrey')
+        return false;
+    }
+    for(let i = 0; i <= arrey.length; i++){
+        if(arrey[i] % 2 !== 0){
+            console.log(`${arrey[i]} impar`)
+        }else{
+            console.log(`${arrey[i]} par`)
+            arrey.splice(i,1,0,0,0,0)
+        }
+        
+    }
+    
+}
+
+substituiPares([0,1,2,3,4,5,6,7,8,9,9,10])
+
+
+
+
