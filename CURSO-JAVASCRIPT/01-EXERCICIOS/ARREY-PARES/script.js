@@ -5,24 +5,16 @@ function substituiPares(arrey){
         return false;
     }
     for(let i = 0; i <= arrey.length; i++){
-        if(arrey[i] % 2 !== 0){
-            console.log(`${arrey[i]} impar`)
+        if(arrey[i] === 0){
+            console.log("Você já é zero!!")
+        }else if(arrey[i] % 2 === 0){
+            console.log(`Substituindo ${arrey[i]} por 0...`)
+            arrey[i] = 0           
         }else{
-            console.log(`${arrey[i]} par`)
-            arrey.splice(i,1)
-        }
-        
-    }
-    
+            console.log(`${arrey[i]} impar`)            
+        }        
+    }  
+    console.log(arrey)    
 }
 
-substituiPares([0,1,2,3,4,5,6,7,8,9,9,10])
-
-let colors = ['red','green','blue'];
-
-colors.splice(2, 0, 'purble');
-console.log(colors);        // [ 'red', 'green', 'purble', 'blue' ]
-
-
-
-
+substituiPares([0,1,2,3,4,5,6,7,8,9,10])
