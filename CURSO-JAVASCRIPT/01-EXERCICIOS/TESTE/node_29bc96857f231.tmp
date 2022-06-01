@@ -1,0 +1,16 @@
+let equipes = 7;
+let partidas;
+
+while(equipes > 2){
+    if(equipes%2 == 0){
+    console.log('par')
+    equipes += (equipes/2);
+
+    console.log(equipes)
+    }else{
+    console.log('impar')
+    equipes += ((equipes - 1)/2)+1;
+
+    console.log(equipes)
+    }   
+}

@@ -1,0 +1,13 @@
+let equipes = 7;
+let partidas = 0;
+
+while(equipes >= 1){
+    if(equipes%2 == 0){
+    equipes = (equipes/2)
+    partidas = partidas + equipes
+    }else{
+    equipes = ((equipes - 1)/2)+1
+    partidas = partidas + equipes
+    }   
+}
+console.log(`Número de paridas: ${partidas}`)
